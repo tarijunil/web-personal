@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Perusahaan Toko Online</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #afd40b;
+            color: white;
+            padding: 10px;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Judul besar di bagian atas */
+        .judul {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #d9dc1d;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 40px;
+            margin: 20px 0;
+        }
+
+        #produk {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .produk-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .produk {
+            text-align: center;
+        }
+
+        .produk img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        /* Informasi Pemilik - Rata kanan kiri */
+        .pemilik-container {
+            display: flex;
+            justify-content: space-between;  /* Memastikan gambar dan teks tersebar */
+            align-items: center;  /* Menyelaraskan gambar dan teks secara vertikal */
+            margin-top: 20px;
+        }
+
+        .pemilik-container img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #679413;
+            color: white;
+        }
+
+        form {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #555;
+        }
+
+        /* Styling untuk informasi kontak */
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Judul Besar Halaman -->
+    <div class="judul">
+        TARI BLOOMS
+    </div>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#tentang">Tentang Kami</a></li>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#pemilik">Informasi Pemilik</a></li> <!-- Menambahkan tautan Informasi Pemilik -->
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Tentang Kami -->
+    <section id="tentang">
+        <h2>Tentang Perusahaan</h2>
+        <p>Perkenalkan, Tari Junilia Dewi, penyedia vas bunga berkualitas yang mengutamakan keindahan dan kepuasan pelanggan. Dengan pengalaman dan dedikasi, Tari menawarkan beragam koleksi vas bunga yang elegan, modern, hingga klasik. Setiap produk dipilih dengan hati-hati untuk mempercantik ruangan Anda. Untuk pemesanan atau informasi lebih lanjut, jangan ragu menghubungi Tari Junilia Dewi. Temukan vas bunga impian Anda bersama kami!"  </p>
+    </section>
+
+    <!-- Section Produk -->
+    <section id="produk">
+        <h2>Produk Kami</h2>
+        <div class="produk-container">
+            <div class="produk">
+                <img src="https://th.bing.com/th/id/OIP.zSWnjvpzEmU9-Ts10ZNfMgHaGE?rs=1&pid=ImgDetMain" alt="Vas Keramik">
+                <p>Vas Keramik</p>
+            </div>
+            <div class="produk">
+                <img src="https://th.bing.com/th/id/OIP.-zb6kUmsMU-7xu3N7aO3YwHaHa?w=1080&h=1080&rs=1&pid=ImgDetMain" alt="Vas Tanah Liat">
+                <p>Vas Tanah Liat</p>
+            </div>
+            <div class="produk">
+                <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98o-lktos1cug0779e" alt="Vas Kaca">
+                <p>Vas Kaca</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Informasi Pemilik -->
+    <section id="pemilik">
+        <h2>Informasi Pemilik</h2>
+        <div class="pemilik-container">
+            <img src="foto.jpg" alt="Pemilik">
+            <div>
+                <h3>Tari Junilia Dewi</h3>
+                <p>Perkenalkan, Tari Junilia Dewi, penyedia vas bunga berkualitas yang mengutamakan keindahan dan kepuasan pelanggan. Dengan pengalaman dan dedikasi, Tari menawarkan beragam koleksi vas bunga yang elegan, modern, hingga klasik. Setiap produk dipilih dengan hati-hati untuk mempercantik ruangan Anda. Untuk pemesanan atau informasi lebih lanjut, jangan ragu menghubungi Tari Junilia Dewi. Temukan vas bunga impian Anda bersama kami!" </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Kontak -->
+    <section id="kontak">
+        <h2>Kontak Kami</h2>
+        <form id="contact-form">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Pesan:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+            <button type="submit">Kirim Pesan</button>
+        </form>
+
+        <!-- Informasi Kontak Perusahaan -->
+        <div class="contact-info">
+            <h3>Alamat Perusahaan</h3>
+            <p>Jl. Aria Santika No.40 A, RT.005/RW.011, Margasari, Kec. Karawaci, Kota Tangerang, Banten 15114, Indonesia</p>
+            
+            <h3>Nomor Telepon</h3>
+            <p>(021) 555-1234</p>
+            
+            <h3>Jam Operasional</h3>
+            <p>Senin - Minggu : 24 Jam</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Toko Online. Semua hak dilindungi.</p>
+    </footer> 
+
+    <script>
+        // Menangani pengiriman formulir kontak
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();  // Mencegah pengiriman formulir yang sebenarnya
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            alert(`Pesan dari ${name} (${email}):\n\n${message}`);
+        });
+    </script>
+
+</body>
+</html>
